@@ -1,0 +1,17 @@
+identity:
+  author: userdsr
+  name: my_sql_tool
+  label:
+    en_US: my_sql_tool
+    zh_Hans: my_sql_tool
+    pt_BR: my_sql_tool
+  description:
+    en_US: a tool for sql execution
+    zh_Hans: a tool for sql execution
+    pt_BR: a tool for sql execution
+  icon: icon.svg
+tools:
+  - tools/my_sql_tool.yaml
+extra:
+  python:
+    source: provider/my_sql_tool.py
