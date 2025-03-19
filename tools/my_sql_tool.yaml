@@ -1,0 +1,30 @@
+identity:
+  name: my_sql_tool
+  author: userdsr
+  label:
+    en_US: my_sql_tool
+    zh_Hans: my_sql_tool
+    pt_BR: my_sql_tool
+description:
+  human:
+    en_US: a tool for sql execution
+    zh_Hans: a tool for sql execution
+    pt_BR: a tool for sql execution
+  llm: a tool for sql execution
+parameters:
+  - name: query
+    type: string
+    required: true
+    label:
+      en_US: Query string
+      zh_Hans: 查询语句
+      pt_BR: Query string
+    human_description:
+      en_US: a tool for sql execution
+      zh_Hans: a tool for sql execution
+      pt_BR: a tool for sql execution
+    llm_description: a tool for sql execution
+    form: llm
+extra:
+  python:
+    source: tools/my_sql_tool.py
