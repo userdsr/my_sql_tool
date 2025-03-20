@@ -12,6 +12,28 @@ identity:
   icon: icon.svg
 tools:
   - tools/my_sql_tool.yaml
+credentials_for_provider:
+  db_uri:
+    help:
+      en_US: For example `mysql://<user>@<host>:<port>/<database>`
+      zh_Hans: 例如 `mysql://<user>@<host>:<port>/<database>`
+    label:
+      en_US: Database URI
+      zh_Hans: 数据库 URI
+    placeholder:
+      en_US: Please enter the database URI
+      zh_Hans: 请输入数据库 URI
+    required: true
+    type: secret-input
+  db_password:
+    type: secret-input
+    required: true
+    label:
+      en_US: Password
+      zh_Hans: 数据库密码
+    description:
+      en_US: "Database account password"
+      zh_Hans: "数据库账户密码"
 extra:
   python:
     source: provider/my_sql_tool.py
