@@ -7,7 +7,6 @@ import pymysql
 
 class MySqlToolProvider(ToolProvider):
     def _validate_credentials(self, credentials: dict[str, Any]) -> None:
-        print(credentials)
         try:
             # 强制依赖检查
             try:
